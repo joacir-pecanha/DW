@@ -1,0 +1,40 @@
+img{
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+body{
+    background-color: antiquewhite;
+}
+main{
+    max-width: 400px;
+    margin: auto;
+    background-color: white;
+    padding: 70px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    font-family: sans-serif;
+   
+}
+
+.preparo{
+    border-radius: 10px;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    font-size: 15px;
+    background-color: rgba(227, 177, 227, 0.466);
+}
+
+p{
+    font-size: 15px;
+}
+
+.chamada{
+    font-family: "Outfit thin", sans-serif;
+    h1{
+        font-size: 1.7rem;
+        font-family: "Young Serif", serif;
+    }
+}
