@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: rgb(249,238,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.flex{
+    background-color: #fff;
+    width: 600px;
+    height: 400px;
+    margin-top: 100px;
+    border-radius: 8px;
+
+    
+    
+}
+
+.cabeçalho{
+    color: rgb(48,19,52);
+    margin-left: 60px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+img{
+    height: 40px;
+    width: 40px;
+}
+
