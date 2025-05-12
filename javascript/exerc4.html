@@ -36,11 +36,15 @@
                 resultado.textContent += `${i} `;
            
               }
+              if (num <= 0 ){
+                  resultado.textContent += `insira um número válido!`;
+                  
+              }
 
         }
          function contar(){
           const resultado = document.getElementById("resultado")
-          for(let i = 1; i <= num; i++){
+          for(let i = 1; i <= 100; i++){
               resultado.textContent += `${i} `;
           }
         }
