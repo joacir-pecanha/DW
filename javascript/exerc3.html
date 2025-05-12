@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin-top: 50px;
+        }
+        input, button {
+          padding: 10px;
+          font-size: 16px;
+        }
+        #resultado {
+          margin-top: 20px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      </style>
+</head>
+<body>
+    <h1> Tabuada </h1>
+    <input type="number" id="numero" placeholder="digite um número"/>    
+    <button onclick="verificar()">Verificar</button>
+
+    <div id="resultado"></div>
+    <script>
+        function verificar(){
+            const num = parseFloat(document.getElementById("numero").value);
+            const resultado = document.getElementById("resultado")
+
+            for(let i = 1; i <= 10; i++){
+                console.log(`A tabuada de ${num} é: ${num} x ${i} = ${num*i}`);
+            }
+        }
+    </script>
+</body>
+</html>

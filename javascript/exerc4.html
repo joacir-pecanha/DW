@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin-top: 50px;
+        }
+        input, button {
+          padding: 10px;
+          font-size: 16px;
+        }
+        #resultado {
+          margin-top: 20px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      </style>
+</head>
+<body>
+    <h1> Contador </h1>
+    <input type="number" id="numero" placeholder="digite um número"/>    
+    <button onclick="verificar()">Contar Números</button>
+    <button onclick="contar()"> Contar até 100</button>
+
+    <div id="resultado"></div>
+    <script>
+        function verificar(){
+            const num = parseFloat(document.getElementById("numero").value);
+            const resultado = document.getElementById("resultado")
+            for(let i = 1; i <= num; i++){
+                resultado.textContent += `${i} `;
+           
+              }
+              if (num <= 0 ){
+                  resultado.textContent += `insira um número válido!`;
+                  
+              }
+
+        }
+         function contar(){
+          const resultado = document.getElementById("resultado")
+          for(let i = 1; i <= 100; i++){
+              resultado.textContent += `${i} `;
+          }
+        }
+    </script>
+</body>
+</html>

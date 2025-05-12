@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Média</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Calculadora de média</h1>
+  <input type="number" id="numero1" placeholder="Digite a primeira menção" />
+  <input type="number" id="numero2" placeholder="digite a segunda menção"/>
+  <input type="number" id="numero3" placeholder="digite a terceira menção"/>
+  <button onclick="verificar()">Verificar</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    function verificar() {
+      const num1 = parseFloat(document.getElementById("numero1").value);
+      const num2 = parseFloat(document.getElementById("numero2").value);
+      const num3 = parseFloat(document.getElementById("numero3").value);
+      const resultado = document.getElementById("resultado");
+    
+      const media = (num1+num2+num3)/3 ;
+      
+      if (media >= 6) {
+        resultado.textContent = `Aluno Aprovado`;
+      } else {
+        resultado.textContent = `Aluno Reprovado`;
+      }
+    }
+  </script>
+
+</body>
+</html>
+
