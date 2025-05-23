@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin-top: 50px;
+        }
+        input, button {
+          padding: 10px;
+          font-size: 16px;
+        }
+        #resultado {
+          margin-top: 20px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      </style>
+</head>
+    <body>
+        <h1> Inverter string </h1>
+        <input type="text" id="entrada" placeholder="Digite aqui">
+        <button onclick="inverter()">Inverter</button>
+         <p><strong>Palavra Invertida: </strong> <span id="saida"></span></p>
+
+        <div id="resultado"></div>
+    <script>
+        function inverter(){
+            const palavra = document.getElementById('entrada').value;
+            const palavraInvertida = palavra.split('').reverse().join('');
+            document.getElementById('saida').textContent = palavraInvertida;
+            } 
+    </script>
+    </body>
+</html>
